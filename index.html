@@ -8,19 +8,19 @@
     <script src="https://kit.fontawesome.com/76c970a45b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+
     <div id="bg"></div>
-    
+
     <section id="landing">
-        <h1>Travel Forest</h1>
+        <h1>Explore Your World</h1>
         <p>Travel hitchhiking unique experiences kayak group discount Budapest tour operator earth locals guest Barcelona diary. AirBnB package airmiles money bunkbeds people worldwide tour operator lodge euro recommendations.</p>
         <button type="button" name="button" onclick="enterSite();">Enter</button>
     </section>
-    
+
     <div id="dimmed-bg"></div>
-    
+
     <section id="full-site">
-        
+
         <aside id="register-side-bar">
             <div id="empty-section"></div>
             <section id="visible-section">
@@ -38,25 +38,25 @@
                 <p>Already have an account? <a href="#">Login</a>.</p>
             </section>
         </aside>
-        
+
         <section id="above-fold">
             <nav>
                 <ul>
-                    <li><a href="#">Travel Forest</a></li>
-                    <li><a href="#">Get Started</a></li>
-                    <li><a href="#">Deal of the Week</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">Become a Sponsor</a></li>
+                    <li><a href="#" onclick="$('#above-fold').goTo();return false;">Explore your world</a></li>
+                    <li><a href="#" onclick="$('#form-section').goTo();return false;">Get Started</a></li>
+                    <li><a href="#" onclick="$('#weekly-deal').goTo();return false;">Deal of the Week</a></li>
+                    <li><a href="#" onclick="$('#testimonials').goTo();return false;">Testimonials</a></li>
+                    <li><a href="#"onclick="$('#locations').goTo();return false;">Locations</a></li>
                 </ul>
             </nav>
-            
+
             <article>
                 <h1>Book your next vacation with us!</h1>
                 <p>Value proposition network effects freemium return on investment analytics. Client beta strategy hypotheses freemium monetization hackathon. Ramen first mover advantage handshake launch party business-to-business seed round strategy.</p>
                 <button type="button" name="button">Get Started</button>
             </article>
         </section>
-        
+
         <section id="info-section">
             <article>
                 <figure></figure>
@@ -80,14 +80,14 @@
                 </div>
             </article>
         </section>
-        
+
         <section id="current-users">
             <header>
                 <h4>Total Vacations Booked This Month</h4>
                 <h3 id="total-users">106,011</h3>
             </header>
         </section>
-        
+
         <section id="locations">
             <h2>Already a member?</h2>
             <a href="#" id="header-link">Book a vacation now!</a>
@@ -107,16 +107,16 @@
                 <li><a href="#">Denmark</a></li>
             </ul>
         </section>
-        
+
         <section id="testimonials">
             <div id="testimonials-bg"></div>
-            
+
             <article>
                 <header>
                     <h2>Our Satisfied Users</h2>
                     <h5>Rated <span>9.6/10</span><br> By our verified users</h5>
                 </header>
-                
+
                 <section id="reviews">
                     <div class="review">
                         <div class="reviewer-details">
@@ -126,7 +126,7 @@
                                 <div class="from">Avid Forest Travel User</div>
                             </div>
                         </div>
-                        <p class="review-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p class="review-text"></p>
                     </div>
                     <div class="review">
                         <div class="reviewer-details">
@@ -148,27 +148,31 @@
                         </div>
                         <p class="review-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
-                    
+
                 </section>
                 <a href="#">Leave a review</a>
                 <a href="#">See all customer reviews</a>
             </article>
         </section>
-        
+
         <section id="weekly-deal">
             <h2>Deal of the week</h2>
             <article id="deal">
                 <div id="deal-details">
                     <h3>Athens, Greece</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Athens is the capital of Greece. It was also at the heart of Ancient Greece,
+                      a powerful civilization and empire. The city is still dominated by 5th-century BC
+                      landmarks, including the Acropolis, a hilltop citadel topped with ancient buildings
+                      like the colonnaded Parthenon temple. The Acropolis Museum, along with the National
+                      Archaeological Museum, preserves sculptures, vases, jewelry and more from Ancient Greece.</p>
                     <a href="#">Claim your vacation now!</a>
                 </div>
                 <figure></figure>
             </article>
         </section>
-        
+
         <footer id="footer">
-            <h5>Travel Forest</h5>
+            <h5>Explore Your World</h5>
             <h6>Find us on Social Media</h6>
             <div id="social-icons">
                 <img src="images/social/facebook.png" alt="A facebook icon.">
@@ -180,15 +184,15 @@
             <hr>
             <h6>Copyright 2020 - All Rights Reserved</h6>
         </footer>
-        
-        
+
+
     </section>
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
     <script
     src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="script.js" type="text/javascript"></script>

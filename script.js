@@ -18,7 +18,7 @@ function openForm() {
     $("#register-side-bar").css("transform", "translate(-650px)");
     $("#register-side-bar").css("transition-delay", "0s");
     $("#register-side-bar").css("z-index", "100");
-    
+
     $("#call-num").css("opacity", "0");
     $("#reg").css("opacity", "0");
 }
@@ -32,12 +32,12 @@ function closeForm() {
 
 
 (function manageTotalUsers() {
-    
+
     let totalUsers = String(getRandom(100000, 200000));
     totalUsers = addComma(totalUsers);
-    
+
     addToTotalUsers(totalUsers);
-    
+
     function addToTotalUsers(currentValue) {
         let num = Number(currentValue.replace(",", ""));
         num++;
@@ -48,25 +48,20 @@ function closeForm() {
             addToTotalUsers(num);
         }, getRandom(100, 2000));
     }
-    
+
     function getRandom(min, max) {
         return Math.floor(Math.random() * (max - min) + min);
     }
-    
+
     function addComma(num) {
         return num.slice(0, 3) + "," + num.slice(3, 6);
     }
-    
+
 })();
 
-
-
-
-
-
-
-
-
-
-
-
+$.fn.goTo = function() {
+        $('html, body').animate({
+            scrollTop: $(this).offset().top + 'px'
+        }, 'slow');
+        return this; // for chaining...
+    }
